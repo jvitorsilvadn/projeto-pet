@@ -36,8 +36,9 @@ a {
   text-decoration: none;
 }
 
-main{
+main {
   margin-left: 125px;
+  position: relative;
 }
 
 .img-principal {
@@ -49,6 +50,7 @@ main{
 
 section {
   display: inline-block;
+  position: absolute;
 }
 
 section h1 {
@@ -61,6 +63,7 @@ section h2 {
   color: #515151;
   font-size: 58px;
   font-weight: 500;
+  margin-top: 1px;
 }
 
 section p {
@@ -68,4 +71,65 @@ section p {
   font-size: 24px;
   font-weight: 400;
   width: 515px;
+  margin-bottom: 65px;
+  margin-top: 32px;
+}
+
+.botao-explorar {
+  border-radius: 20.5px;
+  background: #adff00;
+  width: 239px;
+  height: 64px;
+  border: none;
+  border-radius: 50px;
+  color: #000;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 900px) {
+  .img-principal {
+    display: block;
+    width: 354px;
+    height: 317px;
+    margin: 170px auto 0px;
+  }
+
+  header {
+    display: none;
+  }
+
+  main {
+    position: static;
+    margin: 0px auto 0px;
+    width: 100vw;
+    display: block;
+  }
+
+  section {
+    display: block;
+    width: 263px;
+    height: 52px;
+    position: static;
+    margin: 27px auto 0px;
+  }
+
+  section h1 {
+    margin-top: 25px;
+    margin-bottom: 7px;
+    font-size: 50px;
+    font-weight: 900;
+    width: 263px;
+    height: 52px;
+  }
+
+  section h2 {
+    margin-bottom: 17px;
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  section p {
+    display: none;
+  }
 }
